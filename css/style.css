@@ -6,4 +6,38 @@
 
 html,body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3F2FD;
+}
+
+.select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.default-option {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.custom-arrow {
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+
+.custom-arrow::before {
+    --arrow-size: .5em;
+    content: "";
+    display: inline-block;
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    border-top: var(--arrow-size) solid black;
 }
